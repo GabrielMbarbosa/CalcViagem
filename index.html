@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Viagem</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="nav">
+            <div class="title">
+                <p class="text">CalcViagem</p>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="hero">
+            <div class="about">
+                <h1 class="titulo-about">Calculadora de Viagem</h1>
+                <p class="sobre-about">Calcular a quantidade de combustível necessária para chegar ao seu destino é essencial. Além disso, é importante estimar o custo do combustível e o tempo que levará para chegar ao seu destino. Nossa Calculadora de Viagem oferece uma maneira simples e eficiente de realizar esses cálculos com rapidez e precisão.</p>
+            </div>
+        </div>
+
+        <div class="logica">
+            <div class="inputs">
+                <div class="left">
+                    <label for="kmLitro">Quantos Km/L seu carro faz?</label>
+                    <input type="text" name="kmLitro" id="kmLitro" placeholder="Digite aqui">
+                    
+                    <label for="KmRodado">Quantos Km você percorrerá?</label>
+                    <input type="text" name="KmRodado" id="KmRodado" placeholder="Digite aqui">
+                </div>
+                <div class="right">
+                    <label for="precoCombustivel">Qual é o preço do combustível?</label>
+                    <input type="text" name="precoCombustivel" id="precoCombustivel" placeholder="Digite aqui">
+                
+                    <label for="VelMedia">Qual sua velocidade média na viagem?</label>
+                    <input type="text" name="VelMedia" id="VelMedia" placeholder="Digite aqui">
+                </div>
+            </div>
+
+            <div class="btn">
+                <button onclick="calcular()">Calcular</button>
+            </div>
+        </div>
+
+        <div id="resultado"></div>
+    </main>
+    <footer>
+        <div class="footer">
+            <div class="title-footer">
+                <p class="text-footer">&copy;Todos Direitos Reservados a MB 2024</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
